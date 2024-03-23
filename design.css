@@ -41,30 +41,46 @@
     height: 200px;
     object-fit: cover;
 }
-  
+
+.form-range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 2vh;
+    height: 2vh;
+    border-radius: 2vh;
+    background-color: #001f3f;
+    overflow: visible;
+    cursor: pointer;
+}
+
 #contact {
       background-color: #001F3F; /*0A2949*/
       color: #FFFFFF;
 }
+
 #contactform {
     background-color: #0A2949;
 }
+
 #branches {
       background-color: #001F3F;
       color: #FFFFFF;
 }
+
 #about {
     background-color: #001F3F;
     color: #FFFFFF;
 }
+
 .btn {
     background-color: #001F3F;
     color: #f0f0f0;
     border: none;
 }
+
 .btn:hover {
     background-color: #164473;
 }
+
 #backToTopBtn {
     position: fixed;
     bottom: 20px;
@@ -74,29 +90,36 @@
     color: #f0f0f0;
     border: solid 1px #f0f0f0;
 }
+
 #backToTopBtn:hover {
     background-color: #164473;
 }
+
 footer {
     background-color: #0A2949;
 }
+
 .navbar {
     background-color: rgba(0,31,63, 0.9);
 }
+
 .navbar-nav .nav-link {
     transition: color 0.3s ease;
     color: #FFFFFF;
 }
+
 .navbar-nav .nav-link:hover {
     border-radius: 5px;
     background-color: #0A2949;
     border: solid 1px #f0f0f0;
     color: #ffffff;
 }
+
 #about .container img {
     max-width: 100%;
     max-height: 70vh;
 }
+
 h2 {
     background-color: #0A2949;
 }
