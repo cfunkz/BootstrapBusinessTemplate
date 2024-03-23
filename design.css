@@ -8,7 +8,13 @@
 .carousel-item {
     max-height: 100vh;
 }
+.carousel-item {
+    transition: transform 0.5s ease;
+}
 
+.carousel-inner {
+    overflow: hidden;
+}
 .carousel-item::after {
     content:"";
     position:absolute;
