@@ -57,6 +57,10 @@
     background-color: #001F3F;
     color: #FFFFFF;
 }
+#about .container img {
+    max-width: 100%;
+    max-height: 75vh;
+}
 .btn {
     background-color: #001F3F;
     color: #f0f0f0;
