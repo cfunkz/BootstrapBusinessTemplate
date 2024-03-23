@@ -115,6 +115,7 @@ footer .nav-link:hover {
     border-radius: 5px;
     background-color: #001F3F;
     color: #ffffff;
+    outline: solid 1px #f0f0f0;
 }
 
 #about .container img {
