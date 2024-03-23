@@ -1,0 +1,63 @@
+.section {
+    height: 100vh;
+    padding: 70px 0 0 0;
+    text-align: center;
+}
+.carousel-item {
+    max-height: 100vh;
+}
+.carousel-item::after {
+    content:"";
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    background:rgba(10,41,73,0.3);
+}
+#services {
+      background-color: #001F3F;
+      color: #FFFFFF;
+}
+  
+#quote {
+      background-color: #001F3F; /*0A2949*/
+      color: #FFFFFF;
+}
+  
+#branches {
+      background-color: #001F3F;
+      color: #FFFFFF;
+}
+footer {
+    background-color: #0A2949;
+}
+.navbar-nav .nav-link {
+    transition: color 0.3s ease;
+    color: #FFFFFF; /* Set font color to white */
+    font-weight: bold; /* Make font bold */
+}
+
+.navbar-nav .nav-link:hover {
+    border-radius: 5px;
+    background-color: #0A2949; /* Change background color to black on hover */
+    color: #ffffff;
+}
+.card {
+    background-color: #0A2949;
+    color: #FFFFFF;
+    border: 1px solid #0A2949;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-title {
+    color: #FFFFFF;
+}
+
+.card-text {
+    color: #CCCCCC;
+}
