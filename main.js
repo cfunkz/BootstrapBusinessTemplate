@@ -57,7 +57,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 $(document).ready(function() {
-    $('a.nav-link').on('click', function(clickevent) {
+    $('a').on('click', function(clickevent) {
         clickevent.preventDefault(); // Prevent default link
         var targetId = $(this).attr('href'); // Get the target section ID from the "href" of the clicked link
         var offsetTop = $(targetId).offset().top; // Calculate the top offset of the target section
