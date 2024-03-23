@@ -82,12 +82,4 @@ $(document).ready(function() {
         $('html, body').animate({scrollTop : 0},800);
         return false;
     });
-
-    $('.carousel-control-prev').click(function() {
-        $('#pics').carousel('prev');
-    });
-
-    $('.carousel-control-next').click(function() {
-        $('#pics').carousel('next');
-    });
 });
