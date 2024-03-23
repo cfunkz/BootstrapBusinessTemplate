@@ -1,6 +1,6 @@
 .section {
     min-height: 100vh;
-    padding: 70px 0 0 0;
+    padding: 56px 0 0 0;
     text-align: center;
     align-items: center;
 }
@@ -46,7 +46,9 @@
       background-color: #001F3F; /*0A2949*/
       color: #FFFFFF;
 }
-  
+#contactform {
+    background-color: #164473;
+}
 #branches {
       background-color: #001F3F;
       color: #FFFFFF;
@@ -55,18 +57,27 @@
     background-color: #001F3F;
     color: #FFFFFF;
 }
-
+.btn {
+    background-color: #001F3F;
+    color: #f0f0f0;
+    border: none;
+}
+.btn:hover {
+    background-color: #164473;
+}
+#backToTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    background-color: #0A2949;
+    color: #f0f0f0;
+    border: solid 1px #f0f0f0;
+}
 footer {
     background-color: #0A2949;
 }
-.navbar {
-    transition: opacity 0.5s ease;
-    opacity: 1;
-}
 
-.navbar.invisible {
-    opacity: 0;
-}
 .navbar-nav .nav-link {
     transition: color 0.3s ease;
     color: #FFFFFF;

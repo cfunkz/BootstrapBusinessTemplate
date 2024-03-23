@@ -26,7 +26,7 @@ var services = [
 ];
 
 var discountWeek = 0.7;
-var discountMonth = 0.5;
+var discountMonth = 0.6;
 
 document.addEventListener('DOMContentLoaded', function() {
     var sliders = document.querySelectorAll('.form-range');
@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', function() {
         services.forEach(function(service) { //For each service in services (service)
             if (service.slider === sliderId) { // If service.slider equals sliderId recieved from updatePrice call
                 if (sliderValue >= 28) {
-                    totalPrice = sliderValue * (service.price * discountMonth); //get price and update priceService1 with 50% discount 28 days
+                    totalPrice = sliderValue * (service.price * discountMonth); //get price and update priceService1 with 40% discount 28 days
                 }
                 else if (sliderValue >= 7) {
                     totalPrice = sliderValue * (service.price * discountWeek); //get price and update priceService1 with 30% discount 7 days
@@ -57,13 +57,21 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 $(document).ready(function() {
+
     $(window).on('scroll', function() {
         var navHeight = $('.navbar').outerHeight();
         var scrollTop = $(this).scrollTop();
         if (scrollTop > navHeight) {
-            $('.navbar').addClass('invisible');
+            $('.navbar').fadeOut();
+            $('#backToTopBtn').fadeIn();
         } else {
-            $('.navbar').removeClass('invisible');
+            $('.navbar').fadeIn();
+            $('#backToTopBtn').fadeOut();
         }
+    });
+    
+    $('#backToTopBtn').click(function(){
+        $('html, body').animate({scrollTop : 0},800);
+        return false;
     });
 });
