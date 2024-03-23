@@ -74,6 +74,9 @@
     color: #f0f0f0;
     border: solid 1px #f0f0f0;
 }
+#backToTopBtn:hover {
+    background-color: #164473;
+}
 footer {
     background-color: #0A2949;
 }
