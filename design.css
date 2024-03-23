@@ -6,8 +6,8 @@
     align-items: center;
 }
 .carousel-item {
-    min-height: 100vh;
-    max-height: 100vh;
+    min-height: auto;
+    max-height: auto;
 }
 .carousel-item::after {
     content:"";
